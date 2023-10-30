@@ -75,7 +75,7 @@ a:hover {
 
 /* layout */
 
-#gnb{
+#gnb {
     height: 100px;
     align-items: end;
 }
@@ -83,12 +83,18 @@ a:hover {
 .d2ul {
     top: 100%;
     min-width: 110px;
-    height: 0;
+    max-height: 0;
+    /* height를 max-height로 바꾸고, hover 했을 때, 리스트의 가장 긴 메뉴를 기준으로 길이를 max-height값으로 설정..! 그렇게 되면 자동으로 길이가 잡힌다...!(꿀팁)*/
     overflow: hidden;
     transition: 0.5s;
     z-index: 1000;
     left: 0;
     right: 0;
+    /* width: 100%; */
+    background-color: antiquewhite;
+    line-height: 2;
+    padding: 0 2rem;
+    /* transition 설정을 위해 padding값을 준다. padding의 높이를 주게 되면 높이값 0설정이 무너지기 때문에, 높이 padding은 주면 안됨...!*/
 }
 
 .d1a {
@@ -97,11 +103,17 @@ a:hover {
     padding: 0 2rem;
 }
 
-#gnb:hover .d2ul {
+/* #gnb:hover .d2ul {
     height: 150px;
+} */
+
+.d1li:hover .d2ul {
+    padding: 2rem;
+    max-height: 150px;
 }
 
-#gnb li:hover{
+
+/* #gnb li:hover{
     background-color:white;
 }
 
@@ -123,4 +135,4 @@ a:hover {
 .d2a {
     display: block;
     padding: 0.5rem 2rem;
-}
+} */
