@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.back-color {
+    background-color: antiquewhite;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+a:hover {
+    color: red;
+    background-color: coral;
+}
+
+/* layout */
+.container {
+    width: 200px;
+    flex-direction: column;
+}
+
+.container h1 {
+    height: 100px;
+    line-height: 100px;
+}
+
+#gnb {
+    background-color: bisque;
+    width: 100%;
+    text-align: center;
+}
+
+.d1a{
+    line-height: 3rem;
+}
+
+.d2ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+    
+}
+
+.d2a{
+    line-height: 2rem;
+}
+
+.d1ul li:hover .d2ul{
+    max-height: 150px;
+    background-color: burlywood;
+}
+
+
+
