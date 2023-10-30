@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.bg-check {
+    background-color: gray;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.z-1000 {
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.ofh {
+    overflow: hidden;
+}
+
+.d-block {
+    display: block;
+}
+
+/* layout */
+
+#gnb{
+    height: 100px;
+    align-items: end;
+}
+
+.d2ul {
+    top: 100%;
+    min-width: 110px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
+.d1a {
+    line-height: 50px;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+#gnb:hover .d2ul {
+    height: 150px;
+}
+
+#gnb li:hover{
+    background-color:white;
+}
+
+#gnb:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: lightgray;
+    height: 0;
+}
+
+#gnb:hover::after {
+    height: 150px;
+    
+}
+
+.d2a {
+    display: block;
+    padding: 0.5rem 2rem;
+}
